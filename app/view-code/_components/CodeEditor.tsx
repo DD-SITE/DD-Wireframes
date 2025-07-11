@@ -15,7 +15,8 @@ function CodeEditor({ codeResp, isReady }: any) {
                 }}
                 customSetup={{
                     dependencies: {
-                        ...Constants.DEPENDANCY
+                        ...Constants.DEPENDENCIES
+
                     }
                 }}
                 files={{
@@ -33,7 +34,8 @@ function CodeEditor({ codeResp, isReady }: any) {
                     }}
                     customSetup={{
                         dependencies: {
-                            ...Constants.DEPENDANCY
+                            ...Constants.DEPENDENCIES
+
                         }
                     }}
                     options={{

@@ -18,28 +18,28 @@ export async function POST(req: NextRequest) {
 
     console.log("✅ userEmail received:", userEmail);
 
-    const result = await db
+    const userExists = await db
       .select()
       .from(usersTable)
       .where(eq(usersTable.email, userEmail));
 
-    if (result?.length === 0) {
+    if (userExists.length === 0) {
       const insertResult = await db
         .insert(usersTable)
         .values({
           name: userName,
           email: userEmail,
-          credits: 3,
+          credits: 20,
         })
         .returning();
 
-      return NextResponse.json(insertResult[0]);
+      return NextResponse.json(insertResult[0], { status: 201 }); // Created
     }
 
-    return NextResponse.json(result[0]);
+    return NextResponse.json(userExists[0]); // Already exists
 
   } catch (error: any) {
-    console.error("❌ /api/user POST error:", error);
+    console.error("❌ POST /api/user error:", error);
     return NextResponse.json(
       { error: "Internal Server Error", details: error.message },
       { status: 500 }
@@ -69,7 +69,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(result[0]);
 
   } catch (error: any) {
-    console.error("❌ /api/user GET error:", error);
+    console.error("❌ GET /api/user error:", error);
     return NextResponse.json(
       { error: "Internal Server Error", details: error.message },
       { status: 500 }
