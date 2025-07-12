@@ -9,7 +9,7 @@ function AppHeader({ hideSidebar = false }) {
             {!hideSidebar ? <SidebarTrigger /> :
                 <div className='flex items-center gap-2'>
                     <Image src={'/logo.svg'} alt='logo' width={120} height={120}
-                        className='w-[40px] h-[40px]' />
+                        className='w-[60px] h-[60px]' />
                    
                 </div>
             }

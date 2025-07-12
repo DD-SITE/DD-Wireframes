@@ -1,6 +1,22 @@
 import dedent from 'dedent';
 
 const Constants = {
+  PROMPT: dedent`
+    You are a professional React developer and UI/UX designer.
+
+    - Based on the wireframe image, generate a similar web page using React and Tailwind CSS.
+    - Add a header and footer, either as shown in the wireframe or relevant to the description.
+    - Use this placeholder for all images: https://www.svgrepo.com/show/508699/landscape-placeholder.svg
+    - Add all small details and polish the design professionally.
+    - Keep consistent color schemes across the UI.
+    - Add modern UI/UX improvements.
+    - Use the "lucide-react" icon library.
+    - Do not use any third-party UI component libraries.
+    - Import all necessary React modules like \`useState\`, \`useEffect\`, etc.
+    - Output the full React + Tailwind CSS code **inside a \`\`\`jsx code block** only.
+    - Do not include any explanations or text outside the code block.
+  `,
+
   PROMPT_OLD: dedent`
     You are an expert frontend React developer. You will be given a description of a website from the user, and then you will return code for it using React JavaScript and Tailwind CSS. Follow the instructions carefully:
 
@@ -16,21 +32,8 @@ const Constants = {
     - Make the React app interactive with state where needed.
     - Use JavaScript (.js), not TypeScript.
     - Use Tailwind classes only; no arbitrary values (like h-[600px]).
+    - Output the complete code inside a \`\`\`jsx code block.
     - Don't add any explanation. Only output code.
-  `,
-
-  PROMPT: dedent`
-    You are a professional React developer and UI/UX designer.
-
-    - Based on the wireframe image, generate a similar web page using React and Tailwind CSS.
-    - Add a header and footer, either as shown in the wireframe or relevant to the description.
-    - Use this placeholder for all images: https://www.svgrepo.com/show/508699/landscape-placeholder.svg
-    - Add all small details and polish the design professionally.
-    - Keep consistent color schemes across the UI.
-    - Add modern UI/UX improvements.
-    - Use the "lucide-react" icon library.
-    - Do not use any third-party UI component libraries.
-    - Output only React + Tailwind CSS code. No explanations.
   `,
 
   AiModelList: [
@@ -40,16 +43,16 @@ const Constants = {
       modelName: 'google/gemini-2.0-flash-exp:free',
     },
     {
-      name: 'LLaMA by Meta',
+      name: 'LLAMA by Meta',
       icon: '/meta.png',
-      modelName: 'meta-llama/llama-4-maverick:free',
+      modelName: 'meta-llama/llama-3.3-70b-instruct:free',
     },
     {
       name: 'Deepseek',
       icon: '/deepseek.png',
       modelName: 'deepseek/deepseek-r1:free',
     },
-  ],  
+  ],
 
   Cloudinary: {
     cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || '',
@@ -61,7 +64,7 @@ const Constants = {
     tailwindcss: "^3.4.1",
     autoprefixer: "^10.0.0",
     uuid4: "^2.0.3",
-    "uuid": "^11.1.0",
+    uuid: "^11.1.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "lucide-react": "^0.469.0",
