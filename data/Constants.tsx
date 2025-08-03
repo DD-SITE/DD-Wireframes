@@ -45,12 +45,12 @@ const Constants = {
     {
       name: 'LLAMA by Meta',
       icon: '/meta.png',
-      modelName: 'meta-llama/llama-3.3-70b-instruct:free',
+      modelName: 'meta-llama/llama-3.2-11b-vision-instruct:free',
     },
     {
       name: 'Deepseek',
       icon: '/deepseek.png',
-      modelName: 'deepseek/deepseek-r1:free',
+      modelName: 'qwen/qwen2.5-vl-32b-instruct:free',
     },
   ],
 
