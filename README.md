@@ -62,11 +62,11 @@ Powered by **TypeScript, Firebase, OpenRouter AI, Cloudinary, Neon DB, and Sandp
 
 ---
 ## 📌 Challenges & Unique Aspects  
-🔄 **Real-time wireframe-to-code generation** powered by AI  
-🧩 **Multi-model AI support** using OpenRouter for flexibility & better outputs  
-🖼️ **Seamless image handling** with Cloudinary integration linked to the database  
-🗄️ **Robust schema management** via Drizzle ORM + Neon serverless Postgres  
-⚡ **Optimized live previews** using Sandpack for instant code + UI sync  
+-🔄 **Real-time wireframe-to-code generation** powered by AI  
+-🧩 **Multi-model AI support** using OpenRouter for flexibility & better outputs  
+-🖼️ **Seamless image handling** with Cloudinary integration linked to the database  
+-🗄️ **Robust schema management** via Drizzle ORM + Neon serverless Postgres  
+-⚡ **Optimized live previews** using Sandpack for instant code + UI sync  
 ---
 
 ## 🎥 Demo  
