@@ -71,7 +71,7 @@ Powered by **TypeScript, Firebase, OpenRouter AI, Cloudinary, Neon DB, and Sandp
 
 ## 🎥 Demo  
 
-https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  
+https://github.com/user-attachments/assets/75116515-c085-4828-b58e-debca211a37c  
 
 ---
 
