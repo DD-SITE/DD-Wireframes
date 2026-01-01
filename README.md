@@ -1,4 +1,4 @@
-# 🖼️ DDFRAME – Wireframes to Code Generation with AI  
+#  DDFRAME – Wireframes to Code Generation with AI  
 
 Convert wireframes into clean, responsive **React + Tailwind CSS** components effortlessly.  
 Powered by **TypeScript, Firebase, OpenRouter AI, Cloudinary, Neon DB, and Sandpack**   
@@ -18,21 +18,21 @@ Powered by **TypeScript, Firebase, OpenRouter AI, Cloudinary, Neon DB, and Sandp
 🔗 **Live Demo:** [dd-frame.vercel.app](https://dd-frame.vercel.app)  
 ---
 
-## ✨ Features  
+##  Features  
 
-- 🔑 **Google Authentication** – Sign in via **Firebase Auth**  
-- 🖼️ **Upload Wireframes** – Upload images via **Cloudinary**  
-- 🤖 **AI Code Generation** – Convert wireframes into React + Tailwind components using **OpenRouter (Gemini, Deepseek, LLaMA)**  
-- 📝 **Prompt Customization** – Add custom prompts to guide AI-generated code  
-- 📂 **History Tracking** – View previously generated designs & code under the "Designs" section  
-- ⚡ **Sandpack Integration** – Dual preview for both **code** and **live UI**  
-- 🗄️ **Postgres (Neon DB)** – Store generated code & history securely  
-- 📊 **Charts & Analytics** – Track and visualize usage with Firebase Analytics  
+-  **Google Authentication** – Sign in via **Firebase Auth**  
+-  **Upload Wireframes** – Upload images via **Cloudinary**  
+-  **AI Code Generation** – Convert wireframes into React + Tailwind components using **OpenRouter (Gemini, Deepseek, LLaMA)**  
+-  **Prompt Customization** – Add custom prompts to guide AI-generated code  
+-  **History Tracking** – View previously generated designs & code under the "Designs" section  
+-  **Sandpack Integration** – Dual preview for both **code** and **live UI**  
+-  **Postgres (Neon DB)** – Store generated code & history securely  
+-  **Charts & Analytics** – Track and visualize usage with Firebase Analytics  
 
 ---
 
 
-## 🚀 Tech Stack  
+##  Tech Stack  
 
 ### Frontend  
 - **React (18) + Next.js (15.1.6)** – UI and routing  
@@ -61,12 +61,12 @@ Powered by **TypeScript, Firebase, OpenRouter AI, Cloudinary, Neon DB, and Sandp
 - **Vercel** – Hosting and deployment
 
 ---
-## 📌 Challenges & Unique Aspects  
--🔄 **Real-time wireframe-to-code generation** powered by AI  
--🧩 **Multi-model AI support** using OpenRouter for flexibility & better outputs  
--🖼️ **Seamless image handling** with Cloudinary integration linked to the database  
--🗄️ **Robust schema management** via Drizzle ORM + Neon serverless Postgres  
--⚡ **Optimized live previews** using Sandpack for instant code + UI sync  
+##  Challenges & Unique Aspects  
+- **Real-time wireframe-to-code generation** powered by AI  
+- **Multi-model AI support** using OpenRouter for flexibility & better outputs  
+- **Seamless image handling** with Cloudinary integration linked to the database  
+- **Robust schema management** via Drizzle ORM + Neon serverless Postgres  
+   **Optimized live previews** using Sandpack for instant code + UI sync  
 ---
 
 ## 🎥 Demo  
